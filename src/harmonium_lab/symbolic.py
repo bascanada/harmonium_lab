@@ -324,5 +324,5 @@ def full_symbolic_analysis(
         "consonance": analyze_consonance(score),
         "voice_leading": analyze_voice_leading(score),
         "key_stability": analyze_key_stability(score, window_measures),
-        "contour": analyze_contour(score),
+        "contour": analyze_contour(score, part_index=1),  # Part 1 = Lead (Part 0 = Bass)
     }

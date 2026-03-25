@@ -43,8 +43,10 @@ CONCERN_METRICS: dict[str, dict[str, float]] = {
         "audio_tempo_stability": 0.25,
     },
     "dynamics": {
-        "audio_dynamic_range_db": 0.50,
-        "audio_rms_std": 0.50,
+        "music21_velocity_std": 0.35,
+        "music21_velocity_range": 0.25,
+        "audio_dynamic_range_db": 0.20,
+        "audio_rms_std": 0.20,
     },
     "voice_leading": {
         "music21_parallel_errors": 1.0,  # inverted (fewer is better)
@@ -341,6 +343,9 @@ def flatten_metrics(
         flat["music21_parallel_errors"] = (
             (vl.get("parallel_fifths", 0) or 0) + (vl.get("parallel_octaves", 0) or 0)
         )
+        vel = symbolic.get("velocity", {})
+        flat["music21_velocity_std"] = vel.get("velocity_std")
+        flat["music21_velocity_range"] = vel.get("velocity_range")
 
     if muspy:
         flat["muspy_scale_consistency"] = muspy.get("scale_consistency")

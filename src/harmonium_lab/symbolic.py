@@ -301,6 +301,35 @@ def _empty_contour() -> dict[str, Any]:
 
 
 # ---------------------------------------------------------------------------
+# Velocity / Dynamics analysis (CORELIB-6)
+# ---------------------------------------------------------------------------
+
+
+def analyze_velocity(score: music21.stream.Score) -> dict[str, Any]:
+    """Analyze MIDI velocity distribution across all parts.
+
+    Returns:
+        dict with velocity_std (standard deviation of velocities),
+        velocity_range (max - min), velocity_mean
+    """
+    velocities = []
+    for part in score.parts:
+        for n in part.recurse().getElementsByClass("Note"):
+            if hasattr(n, "volume") and n.volume.velocity is not None:
+                velocities.append(n.volume.velocity)
+
+    if len(velocities) < 2:
+        return {"velocity_std": 0.0, "velocity_range": 0, "velocity_mean": 0.0}
+
+    import statistics
+    return {
+        "velocity_std": round(statistics.stdev(velocities), 2),
+        "velocity_range": max(velocities) - min(velocities),
+        "velocity_mean": round(statistics.mean(velocities), 2),
+    }
+
+
+# ---------------------------------------------------------------------------
 # Full symbolic analysis
 # ---------------------------------------------------------------------------
 
@@ -325,4 +354,5 @@ def full_symbolic_analysis(
         "voice_leading": analyze_voice_leading(score),
         "key_stability": analyze_key_stability(score, window_measures),
         "contour": analyze_contour(score, part_index=1),  # Part 1 = Lead (Part 0 = Bass)
+        "velocity": analyze_velocity(score),
     }

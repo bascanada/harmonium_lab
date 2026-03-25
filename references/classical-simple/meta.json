@@ -1,0 +1,29 @@
+{
+  "name": "classical-simple",
+  "description": "Simple classical pieces with clear tonal structure and smooth voice leading",
+  "harmonium_params": {
+    "tension": [
+      0.1,
+      0.4
+    ],
+    "density": [
+      0.3,
+      0.5
+    ],
+    "smoothness": [
+      0.6,
+      0.9
+    ],
+    "valence": [
+      0.2,
+      0.7
+    ]
+  },
+  "midi_files": [
+    "bach_invention1_bwv772.mid",
+    "bach_invention2_bwv773.mid",
+    "bach_invention3_bwv774.mid",
+    "bach_minuet_g_bwv841.mid",
+    "bach_prelude_c_bwv846.mid"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "jazz-upbeat",
+  "description": "Energetic jazz with active rhythms and higher harmonic tension",
+  "harmonium_params": {
+    "tension": [
+      0.4,
+      0.7
+    ],
+    "density": [
+      0.5,
+      0.7
+    ],
+    "smoothness": [
+      0.3,
+      0.5
+    ],
+    "valence": [
+      0.3,
+      0.8
+    ]
+  },
+  "midi_files": [
+    "autumn_leaves.mid",
+    "beautiful_love.mid",
+    "days_of_wine_and_roses.mid",
+    "it_could_happen_to_you.mid",
+    "stella_by_starlight.mid"
+  ]
+}

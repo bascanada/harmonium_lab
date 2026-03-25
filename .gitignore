@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+.pytest_cache/
+
+# Downloaded reference MIDI files (re-download with: make corpus)
+references/*/*.mid
+references/*/*.midi
+
+# Generated reference profiles (rebuild with: make profiles)
+references/*/profile.json
+
+# Analysis output
+target/

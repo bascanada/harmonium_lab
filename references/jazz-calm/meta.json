@@ -1,0 +1,30 @@
+{
+  "name": "jazz-calm",
+  "description": "Relaxed jazz ballads, smooth voicings, moderate harmonic complexity",
+  "harmonium_params": {
+    "tension": [
+      0.2,
+      0.5
+    ],
+    "density": [
+      0.3,
+      0.5
+    ],
+    "smoothness": [
+      0.5,
+      0.7
+    ],
+    "valence": [
+      0.0,
+      0.5
+    ]
+  },
+  "midi_files": [
+    "but_beautiful.mid",
+    "lush_life.mid",
+    "moon_river.mid",
+    "my_foolish_heart.mid",
+    "my_funny_valentine.mid",
+    "when_i_fall_in_love.mid"
+  ]
+}

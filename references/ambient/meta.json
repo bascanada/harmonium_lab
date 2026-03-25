@@ -1,0 +1,31 @@
+{
+  "name": "ambient",
+  "description": "Slow, meditative, consonant, minimal movement",
+  "harmonium_params": {
+    "tension": [
+      0.0,
+      0.3
+    ],
+    "density": [
+      0.0,
+      0.4
+    ],
+    "smoothness": [
+      0.7,
+      1.0
+    ],
+    "valence": [
+      0.0,
+      0.5
+    ]
+  },
+  "midi_files": [
+    "debussy_clair_de_lune.mid",
+    "debussy_reverie.mid",
+    "satie_gnossienne4.mid",
+    "satie_gnossienne5.mid",
+    "satie_gymnopedie1.mid",
+    "satie_gymnopedie2.mid",
+    "satie_sarabande1.mid"
+  ]
+}

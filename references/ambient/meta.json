@@ -20,12 +20,34 @@
     ]
   },
   "midi_files": [
+    "beethoven_moonlight_mv1.mid",
+    "beethoven_pathetique_mv2.mid",
+    "chopin_nocturne_op15_1.mid",
+    "chopin_nocturne_op15_2.mid",
+    "chopin_nocturne_op27_1.mid",
+    "chopin_nocturne_op27_2.mid",
+    "chopin_nocturne_op32_1.mid",
+    "chopin_nocturne_op37_2.mid",
+    "chopin_nocturne_op48_2.mid",
+    "chopin_nocturne_op55_1.mid",
+    "chopin_nocturne_op55_2.mid",
+    "chopin_nocturne_op62_1.mid",
+    "chopin_nocturne_op62_2.mid",
+    "chopin_nocturne_op9_1.mid",
+    "chopin_nocturne_op9_2.mid",
+    "debussy_arabesque1.mid",
     "debussy_clair_de_lune.mid",
     "debussy_reverie.mid",
+    "jazz_come_sunday.mid",
+    "jazz_danny_boy.mid",
+    "jazz_dreamsville.mid",
+    "jazz_peace_piece.mid",
     "satie_gnossienne4.mid",
     "satie_gnossienne5.mid",
     "satie_gymnopedie1.mid",
     "satie_gymnopedie2.mid",
-    "satie_sarabande1.mid"
+    "satie_sarabande1.mid",
+    "satie_sarabande2.mid",
+    "satie_sarabande3.mid"
   ]
 }
